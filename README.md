@@ -1,0 +1,1 @@
+This is my first time using VSCode to submit a repository through Git to GitHub... More learning needed!
