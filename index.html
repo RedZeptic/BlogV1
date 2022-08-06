@@ -3,23 +3,43 @@
     <head>
         <title>Homepage</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="SiteStyle.css"/>
     </head>
     <body>
         <header>
             <nav>
-            <h1>Thomas's Blog</h1>
-             <a href="index.html">Home</a>
-             <a href="images.html">Images</a>
-             <a href="videos.html">Videos</a>
-             <a href="contact.html">Contact</a>
-             <a href="https://github.com/RedZeptic" target="_blank">My GitHub</a>
-             <hr>
-             </nav>
+                <p class="pagename">Thomas's Blog</p>
+                <a href="index.html">Home</a>
+                <a href="images.html">Images</a>
+                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://github.com/RedZeptic" target="_blank">My GitHub</a>
+                <a href="https://twitter.com/RedZeptic" target="_blank">My Twitter</a>
+                <hr>
+            </nav>
         </header>
-        <main>
-            <h2>Posts(4)</h2><hr>
-            <section>
+        <main class="page-container">
+            <h2 class="post">Posts<em>(5)</em></h2>
+            <section class="content-wrap">
                 <h3><em><a href="https://twitter.com/search?q=%23100DaysOfCode&src=typeahead_click" target="_blank">#100DaysOfCode</a></em> <a href="https://www.100daysofcode.com/" target="_blank">Challenge</a>:</h3>
+                <article>
+                    <p><b>Day 005:</b> <u><em>August 5th 2022:</em></u><br>
+                        Today was quite the day, I spent my time working with this website. 
+                        Using my new fledgling skills with CSS to make a nice fancy stylesheet. currently the website looks like <a href="images/website_8-5-22.PNG" target="_blank">this</a>. 
+                        I am currently very proud and I'm excited to explore what more I can do with CSS to make my site and future projects looks snazzy. 
+                        I also updated the other pages on this site(as of current) to use the same stylesheet, making the blog site in total homogeneous is looks. Took me roughly a little over an hour to accomplish, with some extra work after a break inbetween, making it closer to 2hrs. 
+                        Not much more to say for today, but tomorrow I expect to persue the next project on <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>. 
+                        A difficult thing I'm noticing as of now is the hurdle of organizing my stylesheet and in general I feel somewhat comfortable with my html organization but I'm sure there are issues here as well. 
+                        And on top of that I had a tad difficult time figuring out how to properly place all sections of the page to make it look right in its final form. 
+                        For awhile I had a floating footer not at the bottom of the page, it was at the bottom of this Home page but on others it was seemingly in the middle having a swell time. 
+                        I looked up a tutorial of sorts, simple code snippits conviently from freeCodeCamp's website and got it looking the way I wanted, for the most part. 
+                    </p>
+                    <p>
+                        Last minute change before the day ends, I added a twitter hyperlink to the nav bar, check out my tweets throughout this journey or, at least in the future!
+                        Anyway I look forward to <b>Day 6</b> See you then!
+                    </p>
+                </article>
+                <hr>
                 <article>
                     <p><b>Day 004:</b> <u><em>August 4th 2022:</em></u><br>
                         I finished the 2nd project on <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a> and boy was it a doozie. 
@@ -119,9 +139,9 @@
                 </article>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <hr>
-            Thomas M. - 2022 - <a href="https://twitter.com/RedZeptic">@RedZeptic</a>
+            <p>Thomas M. - 2022 - <a href="https://twitter.com/RedZeptic">@RedZeptic</a></p>
         </footer>
     </body>
 </html>
