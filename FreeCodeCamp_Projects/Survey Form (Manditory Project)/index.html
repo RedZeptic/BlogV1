@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div class="banner">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this form to the best of your abilities, thank you!</p>
+        </div>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name <input type="text" name="name" placeholder="Enter your name" required/></label>
+                <label id="email-label">Email <input type="email" name="email" placeholder="Enter your email address" required></label>
+                <label id="number-label">Age (optional) <input type="number" name="age" placeholder="Your Age" min="13" max="120"/></label>
+                <label>Favorite Color
+                    <select id="dropdown" required>
+                        <option value="">(select one)</option>
+                        <option value="1">Red</option>
+                        <option value="2">Orange</option>
+                        <option value="3">Yellow</option>
+                        <option value="4">Green</option>
+                        <option value="5">Blue</option>
+                        <option value="6">Indigo</option>
+                        <option value="7">Violet</option>
+                    </select>
+                </label>
+                <br><br>
+                <hr>
+                <p>Do you like learning code?</p>
+                <label><input type="radio" name="enjoy-code" class="inline" required>Yes</label>
+                <label><input type="radio" name="enjoy-code" class="inline" required>No</label>
+                <br><br>
+                <hr>
+                <p>Which coding languages are your preffered from these?</p>
+                <label id="HTML"><input type="checkbox" value="1" class="inline"/>HTML</label>
+                <label id="CSS"><input type="checkbox" value="2" class="inline"/>CSS</label>
+                <label id="JavaScript"><input type="checkbox" value="3" class="inline"/>JavaScript</label>
+                <label id="Python"><input type="checkbox" value="4" class="inline"/>Python</label>
+                <label id="C#"><input type="checkbox" value="5" class="inline"/>C#</label>
+                <label id="Java"><input type="checkbox" value="6" class="inline"/>Java</label>
+                <label id="PHP"><input type="checkbox" value="7" class="inline"/>PHP</label>
+                <label id="None"><input type="checkbox" value="8" class="inline"/>None of the above</label>
+                <br>
+                <hr>
+                <label id="textarea">How do you practice coding in your day-to-day life? Feel free to ellaborate!
+                <textarea rows="3" col="30" name="day-to-day" placeholder="I like to code at my desk for many hours a day..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
