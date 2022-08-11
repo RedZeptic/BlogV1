@@ -13,9 +13,9 @@
         </div>
         <form id="survey-form">
             <fieldset>
-                <label id="name-label">Name <input type="text" name="name" placeholder="Enter your name" required/></label>
-                <label id="email-label">Email <input type="email" name="email" placeholder="Enter your email address" required></label>
-                <label id="number-label">Age (optional) <input type="number" name="age" placeholder="Your Age" min="13" max="120"/></label>
+                <label id="name-label">Name <input type="text" name="name" id="name" placeholder="Enter your name" required/></label>
+                <label id="email-label">Email <input type="email" name="email" id="email" placeholder="Enter your email address" required></label>
+                <label id="number-label">Age (optional) <input type="number" name="age" id="number" placeholder="Your Age" min="13" max="120"/></label>
                 <label>Favorite Color
                     <select id="dropdown" required>
                         <option value="">(select one)</option>
@@ -31,8 +31,8 @@
                 <br><br>
                 <hr>
                 <p>Do you like learning code?</p>
-                <label><input type="radio" name="enjoy-code" class="inline" required>Yes</label>
-                <label><input type="radio" name="enjoy-code" class="inline" required>No</label>
+                <label><input type="radio" name="enjoy-code" class="inline" value="1" required>Yes</label>
+                <label><input type="radio" name="enjoy-code" class="inline" value="2" required>No</label>
                 <br><br>
                 <hr>
                 <p>Which coding languages are your preffered from these?</p>
@@ -50,7 +50,7 @@
                 <textarea rows="3" col="30" name="day-to-day" placeholder="I like to code at my desk for many hours a day..."></textarea>
                 </label>
             </fieldset>
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit" id="submit"/>
         </form>
     </body>
 </html>
