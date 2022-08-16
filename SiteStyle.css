@@ -58,3 +58,7 @@ a:active,a:hover {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+ul {
+    color: rgb(204, 204, 204);
+}
