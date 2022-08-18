@@ -3,9 +3,17 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-footer h3 {
+#footer {
     text-align: center;
-    color: whitesmoke
+    color: whitesmoke;
+    background-color: rgb(59, 59, 87);
+    padding: 10px;
+    margin-bottom: -20px;
+    margin-top: 100px;
+}
+
+#footer a:hover, #footer a:visited, #footer a {
+    color: rgb(107, 107, 214);
 }
 
 #main {
@@ -17,17 +25,16 @@ footer h3 {
     text-align: center;
 }
 
-.banner {
-    background-color: rgb(59, 59, 87);
-    color: rgb(233, 233, 233);
+#main #title, #main #h3-1 {
+    color: rgb(75, 75, 75);
     text-align: center;
     margin-top: 20px;
+    padding: 10px;
     border-radius: 10px 10px 0 0;
 }
 
-.banner h1 {
-    margin: 0 0 20px;
-    padding: 10px;
+.banner h3 {
+    margin: 0;
 }
 
 #img-div {
@@ -39,13 +46,17 @@ footer h3 {
     color: rgb(212, 212, 212);
 }
 
-#img {
+#img-caption {
+    padding: 10px 0px;
+}
+
+#image {
     width: 100%;
     height: auto;
-    max-width: 1350px;
+    max-width: 100%;
     min-width: 200px;
     margin: auto;
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
