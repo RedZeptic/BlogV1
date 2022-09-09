@@ -143,12 +143,13 @@ header #navbar ul li a {
     padding: 10px;
     border: none;
     color: white;
-    background-color: rgb(233, 47, 47);
+    background-color: rgb(153, 31, 31);
     box-shadow: 0px 0px 2px black;
 }
 
 #show-more button:hover {
     cursor: pointer;
+    background-color: rgb(233, 47, 47);
 }
 
 
@@ -178,6 +179,11 @@ header #navbar ul li a {
 #socials a, #socials:visited {
     color: rgb(255, 255, 255);
     font-size: 3em;
+    padding: 0 80px 0;
+}
+
+#socials a:hover {
+    color: rgb(236, 65, 65);
 }
 
 /* Footer */
@@ -222,6 +228,7 @@ footer > p {
         font-size: 2em;
     }
     
+
     #socials p {
         font-size: 1.2em;
         padding-bottom:50px;
@@ -230,7 +237,7 @@ footer > p {
     #socials a, #socials:visited {
         color: rgb(255, 255, 255);
         font-size: 2.2em;
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     footer > p {
