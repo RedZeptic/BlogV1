@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Zehd</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar"></nav>
-    <main>
-        <section id="contact">
-            <h1>TBA</h1>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="script.js"></script> <!-- Navbar -->
-</body>
+    <head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="SiteStyle.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <p class="pagename">Contact Page</p>
+                <a href="index.html">Home</a>
+                <a href="images.html">Images</a>
+                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://github.com/RedZeptic" target="_blank">My GitHub</a>
+                <a href="https://twitter.com/RedZeptic" target="_blank">My Twitter</a>
+                <hr>
+            </nav>
+        </header>
+        <main class="page-container">
+            <section class="content-wrap">
+                <fieldset>
+                    <form action="thankyou.html">
+                        <input type="text" name="name" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="Email Address" required><br>
+                        <input type="text" name="reason" placeholder="Reason for Contacting">
+                        <button type="submit">Send</button>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+        <footer class="footer">
+            <hr>
+            <p>Thomas M. - 2022 - <a href="https://twitter.com/RedZeptic">@RedZeptic</a></p>
+        </footer>
+    </body>
 </html>
