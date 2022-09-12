@@ -7,6 +7,7 @@
 
 :root {
     --body-color1: rgb(192, 192, 192);
+    --section-color1: rgb(236, 236, 236);
     --highligt-color1: rgba(221, 174, 174, 0.699);
 }
 
@@ -71,15 +72,16 @@ body {
     background: var(--body-color1);
 }
 
-/* Main */
-main {
-    margin: 90px 0 10px 0;
+.main {
+    margin: 120px 0 10px 0;
     display: grid;
     justify-items: center;
     row-gap: 10px;
 }
 
-main section {
+/* Blog Main */
+
+.blog section {
     background-color: rgb(236, 236, 236);
     width: 90%;
     height: 100%;
@@ -95,14 +97,14 @@ main section {
     padding: 0 5px;
 }
 
-section li {
+.blog section li {
     margin: 6px 45px 6px;
     padding: 9px;
     background-color: var(--highligt-color1);
     border-radius: 4px;
 }
 
-p:not(:first-child) {
+.blog p:not(:first-child) {
     margin: 20px;
 }
 
@@ -123,21 +125,98 @@ article a, article a:hover, article a:visited {
 
 
 
-
+/* About section */
 
 #about {
-    background-color: rgb(255, 0, 0);
+    background-color: var(--section-color1);
     padding: 10px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
 }
+
+#about h1 {
+    font-family: Montserrat;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+#about p {
+    font-size: 20px;
+    font-family: monospace;
+    margin: 0 30px 30px 30px;
+}
+
+
+
+/* Project Section HEAVY WORK IN PROGRESS!!!!!!! UGH! */
 
 #projects {
-    background-color: rgb(60, 255, 0);
+    background-color: var(--section-color1);
     padding: 10px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
 }
 
-#contact {
-    background-color: rgb(255, 187, 0);
-    padding: 10px;
+#projects h1 {
+    font-family: Montserrat;
+    text-align: center;
+    margin: 30px 0 30px 0;
 }
+
+#freeCodeCamp {
+    background-color: pink;
+}
+
+.proj-container {
+    background-color: green;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-tile {
+    background-color: blue;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    padding: 30px;
+}
+
+.project-tile img {
+    max-width: 500px;
+    height: auto;
+    
+
+    padding: 2px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+#contact {
+    background-color: var(--section-color1);
+    padding: 10px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#contact h1 {
+    font-family: Montserrat;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
 
 /* Footer */
