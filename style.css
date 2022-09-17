@@ -117,7 +117,7 @@ article em {
     background-color: rgba(0, 0, 0, 0);
 }
 
-article a, article a:hover, article a:visited {
+article a, article a:hover, article a:visited, a:link {
     color: rgb(255, 0, 0);
 }
 
