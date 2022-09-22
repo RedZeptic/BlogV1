@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-color1: rgb(192, 192, 192);
+    --section-color1: rgb(236, 236, 236);
+    --highlight-color1: rgba(221, 174, 174, 0.699);
+}
+
 /* Navbar */
 nav {
     background-color: rgb(109, 109, 109);
