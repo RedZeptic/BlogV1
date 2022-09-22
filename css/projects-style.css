@@ -60,7 +60,7 @@ nav {
     margin-right: 60px;
 }
 
-.nav-links li:hover, .nav-links li:visited {
+.nav-links li:hover {
     background-color: rgb(80, 80, 80);
     cursor: pointer;
 }
