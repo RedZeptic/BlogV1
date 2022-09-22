@@ -120,6 +120,29 @@ nav {
     }
 
     .nav-links li {
+        font-size: 12px;
+    }
+
+    .nav-links a {
+        padding: 34px 15px;
+    }
+
+    #last-nav {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    #banner > p {
+        font-size: 15px;
+        margin: -2px 10px 0 30px;
+    }
+    
+    .nav-links {
+        padding-right: -100px;
+    }
+
+    .nav-links li {
         font-size: 10px;
     }
 
