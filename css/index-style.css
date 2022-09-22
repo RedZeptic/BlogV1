@@ -20,7 +20,7 @@ nav {
     top: 0;
     display: flex;
     justify-content: space-between;
-    font-family: monospace;   
+    font-family: Montserrat, monospace, Arial, Helvetica, sans-serif;
 }
 
 #banner > p {
@@ -30,7 +30,6 @@ nav {
     margin-right: 30px;
     min-width: 32px;
     font-size: 40px;
-    font-family: Montserrat;
     white-space: nowrap;
 }
 
