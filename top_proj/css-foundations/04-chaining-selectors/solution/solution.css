@@ -1,14 +1,9 @@
-.inverted,
-.fancy {
-  font-family: Helvetica, "Times New Roman", sans-serif;
-  font-size: 28px;
+.avatar.proportioned {
+  height: auto;
+  width: 300px;
 }
 
-.inverted {
-  background-color: black;
-  color: white;
-}
-
-.fancy {
-  background-color: yellow;
+.avatar.distorted {
+  height: 400px;
+  width: 200px;
 }
