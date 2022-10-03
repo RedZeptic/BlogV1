@@ -106,7 +106,9 @@ console.log("20)",z7,"<- same as above but with letters"); // this puts Hell and
 let x20 = '1';
 let y20 = 1;
 let z8 = x20 + y20;
-console.log("21)",z8,'<- "1"1'); // it puts them next to each other like a string!
+console.log("21)",z8,'<- "1"1'); // it puts them next to each other like a string! // NOT A STRING actually, its a full numeric integer now
+console.log("ignore for now ->",isNaN(z8)); // means that z8 is a integer
+console.log("ignore for now ->",isNaN(y20)); // shows that integers show us as false in the output.
 
 let x21 = 10;
 let y21 = 20;
@@ -118,4 +120,55 @@ let z10 = "30";
 console.log("23)",x21 + y21 + z10,"<- similar situation as above"); // This happens because of the order of operations..
 // 10 + 20 = 30.. 30 + "30" = 3030
 
-//TBC
+// Numeric Strings
+
+let x22 = 100;
+let y22 = "100";
+let z11 = x22 / y22;
+console.log("24)",z11); // JS will convert strings into numeric operations
+
+let x23 = "100";
+let y23 = "10";
+let z12 = x23 * y23;
+console.log("25)",z12,isNaN(z12),"<- means it is a number/integer from 2 strings")
+
+// NaN - Not a Number
+let apple = 100 / "apple";
+console.log("26)",apple);
+
+console.log("27)",typeof NaN);
+
+// Infinity
+// let myNumber = 2;
+// // execute until infinity
+// while (myNumber != Infinity) {
+//     myNumber = myNumber * myNumber;       // This seems to crash the live server preview lol
+// }
+console.log("28)",typeof Infinity);
+
+//
+
+let myNumber = 32;
+console.log(
+    "29)",
+    myNumber.toString(32),
+    myNumber.toString(16),
+    myNumber.toString(12),
+    myNumber.toString(8),
+    myNumber.toString(2)
+);
+
+// JS Num as Obj
+
+let xx = 123;
+let yy = new Number(123); // this is an object now
+console.log("30)",xx,yy);
+
+let xx1 = 500;
+let yy1 = new Number(500);
+
+console.log("31)",xx1 == yy1); // == converts the variable values to the same type before performing comparison. This is called type coercion.
+console.log("32)",xx1 === yy1); //=== does not do any type conversion (coercion) and returns true only if both values and types are identical for the two variables being compared.
+
+// end of this document, I will be using the JS developer tools console for the MDN doc
+
