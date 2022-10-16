@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        // 1)
+        console.log("1) -----");
+        console.log(23 + 97);
+
+        // 2)
+        console.log("2) -----");
+        function sequenceSum(begin, end, step) {
+            let sum = 0;
+            for (let i = begin; i <= end; i += step){
+                sum = sum + i;
+            } return sum;
+        }
+        console.log(sequenceSum(0,5,1)); // = 15
+        //They also might have been wanting this
+        console.log(0+1+2+3+4+5); // = 15
+
+        // 3)
+        console.log("3) -----");
+        console.log((4 + 6 + 9) / 77); // = 0.24675
+
+        // 4)
+        console.log("4) -----");
+        let a = 10;
+        console.log(a);
+        console.log(9 * a);
+        let b = 7 * a;
+        console.log(b);
+
+        // 5)
+        console.log("5) -----");
+        const max = 57;
+        let actual = max - 13;
+        let percentage = actual / max;
+        console.log(percentage);
+    </script>
+    <p>
+        Inspect this page.<br>
+        Check out the Console tab.<br>
+    </p>
+</body>
+</html>
