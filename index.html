@@ -30,6 +30,26 @@
 
         <section>
             <article>
+                <p class="post-title"><b>Day 081:</b> <u><em>October 20th 2022:</em></u><br></p>
+                <p>
+                    Today I didn't really do much, or get very far.
+                    But I did learn how to match whitespace and non-whitespace characters using <em>\s</em> and <em>\S</em> in a regex.
+                    I got to specify how many upper and lower numbers I wanted to match to, using <em>/x{2,5}</em> meaning if the input has 2-5 x's it will match it.
+                    I used <em>/x{4,}/</em> with no other value next to "4" to get the response of; give any matches with four or more of "x" in it.
+                    Also got to specify how many exact matches using <em>/xy{3}z/</em> meaning I would only get "xyyyz" which outputs true with .test(), the "xyyyz" would be the only match, if given "xyyyyz" it would result in a fail of a pass.
+                    Then to wrap it up, learned how to express a difference in same language words and have them still match.
+                    Such as "flavor" & "flavour", the regex being <em>/flavou?r/</em> where the "u?" means; look for 0 or more of this letter and match it.
+                    If the input doesn't have the "u" contained that meets the zero criteria and pushes as a match, and vice versa.
+                    Still requiring the rest of the regex match to succeed to actually pass it as a match.
+                    Otherwise it would fail.
+                </p>
+                <p>
+                    That's all for me today, happy 19 days and counting!
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
                 <p class="post-title"><b>Day 080:</b> <u><em>October 19th 2022:</em></u><br></p>
                 <p>
                     Today I went over the lessons teaching me more about regex operators and what more of them do.
