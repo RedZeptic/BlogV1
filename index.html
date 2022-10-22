@@ -30,6 +30,43 @@
 
         <section>
             <article>
+                <p class="post-title"><b>Day 082:</b> <u><em>October 21st 2022:</em></u><br></p>
+                <p>
+                    Today I completed the Regular Expressions section (the one with all the lessons on regex creation).
+                    Started out by learning about positive and negative lookahead syntax, <em>/(?=...)/</em> being the positive, and <em>/(?!...)/</em> being the negative variant.
+                    They both look ahead into what the regex is searching for and makes sure that your matches meet those expectations.
+                    Positive being it has it, negative being that it does not contain it.
+                    At this point I had been supplementing my learning with youtube videos that explain these topics more in depth and it has been helping quite a lot.
+                    I did this more later into the lessons.
+                </p>
+                <p>
+                    The next lesson taught me about checking for a variety of possibilities when searching, so if I was looking for two people with the same last name but different first names I could match both of them together regardless.
+                    In a very simplistic way though, <em>"Pumpkin Punching Penguin"</em> as a sample string could be matched like so <em>/P(umpk|engu|unch)ing?/</em> the <em>(...|...)</em> options give it "or" logic, and the "g?" takes it if it is present but if it is not it will be ignored.
+                    Then I hit a snag, a tough lesson with a tough challenge.
+                    When trying to pull 3 repeats of "42" from a string I started to need a thing called capture groups.
+                    <em>/(x)(y)(z)/</em> each "( )" was capturing the insides as its own temporary variable.
+                    You can access these temporary variables in the regex in the order they show up.
+                    So <em>/(1)(2)(3)/</em> would be the order.
+                    I used this new technique to pull just 2 extra "42"s from the string like so <em>/^(\d+) \1 \1$/</em>.
+                    This was one of the lessons needing a video to explain more in-depth, I had been forgetting about the caret <em>^</em> and $ that indicate the start and end of my regex match.
+                </p>
+                <p>
+                    Then I learned how to further use captures and in addition with the <em>.replace()</em> method on strings.
+                    This is where I learned how to use the dollar sign syntax in strings.
+                    Remember those temporary variables from the captures I mentioned earlier?
+                    Well they can be added back into a string using their indicator number and the "$".
+                    So inside of the .replace(REGEX, "$1 $2 $3") from earlier would be "x y z".
+                    After that I completed the last lesson in this section by removing the whitespace from a string, using captures and $ syntax.
+                    By this point it was fairly easy to do, and the previous lessons were more difficult.
+                </p>
+                <p>
+                    But that does it for today, I feel I have a decent understanding on regex's now and that wasn't so bad, very interactive.
+                    Turning out to be a little fun :D
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
                 <p class="post-title"><b>Day 081:</b> <u><em>October 20th 2022:</em></u><br></p>
                 <p>
                     Today I didn't really do much, or get very far.
