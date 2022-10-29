@@ -30,6 +30,33 @@
 
         <section>
             <article>
+                <p class="post-title"><b>Day 089:</b> <u><em>October 28th 2022:</em></u><br></p>
+                <p>
+                    Today my hour was taken up by two challenges, both being rather difficult for me.
+                    Starting out, the "Title Case a Sentence" challenge had me doing just that.. making every letter in a string lowercase first and then having uppercase first letters, Like This Segment Of Text Right Here.
+                    My method at first was to use a regex, which I didn't complete the lesson with but now looking back I could've made it work anyway.
+                    I wanted the function to be the least amount of code possible for me, and having a regex was adding more.
+                    So I ended up assigning the given string to itself with <em>.toLowerCase()</em>, then self assigning it <em>.split(" ")</em>.
+                    Next I ran a for loop through it's length and self assigned each first letter to be upper case, the code looks like this <em>str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)</em>.
+                    Then using <em>.join(" ")</em> to stitch the array of words together with spaces between them back into a string.
+                    The <em>.split()</em> turned them into an array, separating them by the "spaces".
+                </p>
+                <p>
+                    Next up was "Slice and Splice", but without much of the first part.
+                    The goal of this function is to take 2 arrays, and a index to add the first one into the second array.
+                    making arr1 <em>[1,2,3]</em> go in between arr2[index] and the end of the array, in order.
+                    I got this resolved and functioning by assigning <em>arr3 = [...arr2]</em> as to not mess with the original arr2, then let <em>x = arr3.splice(index)</em>.
+                    I ran <em>arr3.splice(n)</em> next because it provides different outputs depending on if you assign it to a variable, or run it standalone, as it effects the "arr3" when used, but gives you the remaining when assigned.
+                    Next I wrote two for loops, iterating through arr1 and x, arr1's loop pushed arr1[i] to the now spliced arr3(non assigned), the code looked like this <em>for (let i = 0; i < arr1.length; i++) {arr3.push(arr1[i])}</em> while the second loop was pushing the effected array(x)'s values into arr3, code went like this <em>for (let j = 0; j < x.length; j++) {arr3.push(x[j]);}</em>.
+                    After those completed all that was left was to return arr3, and it would now contain <em>arr3 == [4,1,2,3,5]</em>.
+                </p>
+                <p>
+                    Overall, hard challenges but I feel happy they are done now!
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
                 <p class="post-title"><b>Day 088:</b> <u><em>October 27th 2022:</em></u><br></p>
                 <p>
                     Today I ended up not needing to look at any of the hint solutions for the challenges!
