@@ -46,7 +46,8 @@
 
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
-  const lowOrHi = document.querySelector('lowOrHi');
+  const lowOrHi = document.querySelector('.lowOrHi'); // (fixed)ERROR HERE - it was missing the class syntax, "." before the "lowOrHi"
+//   console.log(lowOrHi); // no longer "null"
   const guessSubmit = document.querySelector('.guessSubmit');
   const guessField = document.querySelector('.guessField');
 
@@ -64,7 +65,7 @@
     if(userGuess === randomNumber) {
       lastResult.textContent = 'Congratulations! You got it right!';
       lastResult.style.backgroundColor = 'green';
-      lowOrHi.textContent = '';
+      lowOrHi.textContent = ''; // ERROR HERE?
       setGameOver();
     } else if(guessCount === 10) {
       lastResult.textContent = '!!!GAME OVER!!!';
@@ -75,7 +76,7 @@
       if(userGuess < randomNumber) {
         lowOrHi.textContent = 'Last guess was too low!';
       } else if(userGuess > randomNumber) {
-        lowOrHi.textContent = 'Last guess was too high!';
+        lowOrHi.textContent = 'Last guess was too high!'; // ERROR HERE?
       }
     }
 
@@ -83,7 +84,7 @@
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addeventListener('click', checkGuess);
+  guessSubmit.addEventListener('click', checkGuess);
 
   function setGameOver() {
 	  guessField.disabled = true;
@@ -91,7 +92,7 @@
 	  resetButton = document.createElement('button');
 	  resetButton.textContent = 'Start new game';
 	  document.body.appendChild(resetButton);
-	  resetButton.addeventListener('click', resetGame);
+	  resetButton.addEventListener('click', resetGame);
   }
 
   function resetGame() {
