@@ -235,6 +235,80 @@
                     </tr>
                 </tbody>
             </table>
+            <hr>
+        </section>
+        <section>
+            <h2>Forms!</h2>
+            <form action="/example">
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="username" name="username" id="username">
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password" name="password" id="password">
+                </p>
+                <input type="color" name="color">
+                <input type="number" name="number">
+                <input type="time" name="time">
+                <p> <!-- This does not submit the form as it is specified to be a "button" type rather than "submit"-->
+                    <button type="button">Middle Button</button>
+                </p>
+                <p>
+                    <!--Inputs can be nested in labels, but for styling purposes it's best practice to keep them separate-->
+                    <label for="red">Red?</label>
+                    <input type="checkbox" name="red" id="red">
+                    <label for="blue">or Blue?</label>
+                    <input type="checkbox" name="blue" id="blue">
+                </p>
+                <button>Submit</button> <!--Submits the form by default with no changes made to this button -->
+                <input type="submit"> <!--This is basically the same as the button tag, but it's more annoying to change attributes like text-->
+                <p>
+                    <!-- <input type="search" name="q"> -->
+                </p>
+            </form>
+            <hr>
+            <h2>Google Search</h2>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" placeholder="Search Google">
+                <button>Search</button>
+            </form>
+            <hr>
+            <h2>YouTube Search</h2>
+            <form action="https://www.youtube.com/results">
+                <input type="text" name="search_query" placeholder="Search Youtube">
+                <button>Search</button>
+            </form>
+            <hr>
+            <h2>Checkboxes, radio buttons, and selects</h2>
+            <form action="/example">
+                <p>
+                    <input type="checkbox" name="agree_tos" id="agree">
+                    <label for="agree">I Agree to TOS</label>
+                    <button>Submit</button>
+                </p>
+                <p>
+                    <label for="s">Small</label>
+                    <input type="radio" name="size" id="s" value="Small">
+                    <label for="m">Medium</label>
+                    <input type="radio" name="size" id="m" value="Medium">
+                    <label for="l">Large</label>
+                    <input type="radio" name="size" id="l" value="Large">
+                    <button>Submit</button>
+                </p>
+            </form>
+            <form action="/example">
+                <p>
+                    <label for="meal">Please Select a Food</label>
+                    <select name="meal" id="meal">
+                        <option value="X">SELECT A FOOD</option>
+                        <option value="food 1">Food 1</option>
+                        <option value="food 2">Food 2</option>
+                        <option value="food 3">Food 3</option>
+                    </select>
+                    <button>Submit</button>
+                </p>
+            </form>
         </section>
     </main>
     <footer>
