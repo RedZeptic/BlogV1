@@ -241,12 +241,12 @@
             <h2>Forms!</h2>
             <form action="/example">
                 <p>
-                    <label for="username">Username</label>
-                    <input type="text" placeholder="username" name="username" id="username">
+                    <label for="username1">Username</label>
+                    <input type="text" placeholder="username" name="username1" id="username1">
                 </p>
                 <p>
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="password" name="password" id="password">
+                    <label for="password1">Password</label>
+                    <input type="password1" placeholder="password" name="password1" id="password1">
                 </p>
                 <input type="color" name="color">
                 <input type="number" name="number">
@@ -280,7 +280,7 @@
                 <button>Search</button>
             </form>
             <hr>
-            <h2>Checkboxes, radio buttons, and selects</h2>
+            <h3>Checkboxes, radio buttons, and selects</h3>
             <form action="/example">
                 <p>
                     <input type="checkbox" name="agree_tos" id="agree">
@@ -297,6 +297,7 @@
                     <button>Submit</button>
                 </p>
             </form>
+            <h3>Dropdown menu selector</h3>
             <form action="/example">
                 <p>
                     <label for="meal">Please Select a Food</label>
@@ -307,6 +308,73 @@
                         <option value="food 3">Food 3</option>
                     </select>
                     <button>Submit</button>
+                </p>
+                <h3>Type = range, min="" max=""</h3>
+                <p> <!--Range inputs-->
+                    <label for="change">Amount of Money</label>
+                    <input type="range" name="change" min="0" max="10" value="0">
+                </p>
+                <h3>type="number"</h3>
+                <p>
+                    <input type="number" min="0" max="1000" step="2">
+                </p>
+                <h3>Text Area Tag</h3>
+                <p> <!--Not an input, its a text area, but still involved in forms like inputs-->
+                    <label for="requests">Any special requests?</label><br>
+                    <textarea name="requests" id="requests" cols="30" rows="10" placeholder="type something here..."></textarea>
+                </p>
+            </form>
+            <h2>Form Validation</h2>
+            <h3>required attribute</h3>
+            <form action="/example"> <!--form input validation-->
+                <label for="first1">First Name</label>
+                <input type="text" name="first1" id="first1" placeholder="First Name" required>
+                <p>
+                    <label for="username2">Username</label>
+                    <input type="text" minlength="5" maxlength="20" name="username2" id="username2" required>
+                </p>
+                <p>
+                    <label for="email1">Email</label>
+                    <input type="email1" name="email1" required>
+                </p>
+                <p>
+                    <label for="url1">URL</label>
+                    <input type="url1" name="url1" id="url1">
+                </p>
+                <button>Submit</button>
+            </form>
+            <hr>
+            <h2>Challenge from HTML section</h2>
+            <h3>Race Registration!</h3>
+            <form action="/example">
+                <p>
+                    <label for="first2">First Name</label>
+                    <input type="text" name="first2" id="first2" required>
+                    <label for="last1">Last Name</label>
+                    <input type="text" name="last1" id="last1" required>
+                </p>
+                <p>
+                    Select a Race:
+                </p>
+                <p>
+                    <input type="radio" name="race" id="1" value="1">
+                    <label for="1">Fun Run 5k</label><br>
+                    <input type="radio" name="race" id="2" value="2">
+                    <label for="2">Half Marathon</label><br>
+                    <input type="radio" name="race" id="3" value="3">
+                    <label for="3">Full Marathon</label><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required><br>
+                    <label for="age">Select Age Group</label>
+                    <select name="age" id="age">
+                        <option value="under_18" selected>under 18</option>
+                        <option value="18-29">18-30</option>
+                        <option value="30-49">30-49</option>
+                        <option value="50+">50+</option>
+                    </select><br>
+                    <button>Register!</button>
                 </p>
             </form>
         </section>
