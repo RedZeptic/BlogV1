@@ -1,5 +1,5 @@
 h2 {
-    color: magenta;
+    color: #5FCFFC;
     background-color: rgb(81, 151, 0);
 }
 
@@ -11,4 +11,8 @@ p {
 button {
     color: green;
     background-color: aliceblue;
+}
+
+body {
+    background-color: #C5E;
 }
