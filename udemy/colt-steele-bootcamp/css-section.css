@@ -3,6 +3,7 @@ h1 {
     font-weight: 400;
     text-decoration: rgb(255, 204, 0) underline wavy 4px;
     letter-spacing: 10px;
+    font-size: 80px;
 }
 
 a {
