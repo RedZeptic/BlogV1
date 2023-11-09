@@ -102,3 +102,9 @@ ID > Class > Element
 In order of priority.
 Only applies when a conflict arises, when original attributes are involved they still take priority.
 */
+
+/* button {
+    background-color: magenta !important;
+} */
+
+/* !important ignores specificity and takes priority */
