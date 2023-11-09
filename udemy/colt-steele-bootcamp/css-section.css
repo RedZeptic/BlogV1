@@ -85,3 +85,9 @@ p::first-line {
 p::selection {
     background-color: #fcbf49;
 }
+
+/* The order of what is declared matters, if it shows up first in the document, top to bottom, the declinations at the bottom overwrite the ones at the top. So the h1 & h2 below would take priority over the top of the documents similar declaration for the same tags */
+/* h1,h2 {
+    color: yellow;
+} */
+
