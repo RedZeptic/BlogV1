@@ -57,11 +57,6 @@ a[href*="google"] {
     color: magenta;
 }
 
-.post button:hover {
-    background-color: #e63946;
-    color: #f1faee;
-}
-
 .post a:hover {
     text-decoration: underline;
 }
@@ -91,3 +86,19 @@ p::selection {
     color: yellow;
 } */
 
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+
+/* 
+Specificity:
+ID > Class > Element
+In order of priority.
+Only applies when a conflict arises, when original attributes are involved they still take priority.
+*/
